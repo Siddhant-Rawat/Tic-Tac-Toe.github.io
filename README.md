@@ -2,4 +2,4 @@
 
 This is a simple Tic-Tac-Toe game developed by me using HTML, CSS and JS.
 
-You can view the
+View the implementation - https://siddhant-rawat.github.io/Tic-Tac-Toe.github.io/
