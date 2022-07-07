@@ -114,7 +114,7 @@ nav ul {
     }
 
     .container {
-        grid-template-columns: repeat(3, 20vw);
-        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-rows: repeat(3, 10vw);
     }
 }
