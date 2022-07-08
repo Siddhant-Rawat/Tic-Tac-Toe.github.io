@@ -12,8 +12,8 @@ const changeTurn = ()=> {
 //Function to check for the winner
 const checkWinner = ()=> {
     let boxtext = document.getElementsByClassName('boxText');
-    let wins = [
-        [0,1,2,5,5,0],
+    let wins = [            //1st 3 digits -> combinations that can be made to win a game.
+        [0,1,2,5,5,0],      //last 3 digits -> the translate and rotate digits.
         [3,4,5,5,15,0],
         [6,7,8,5,25,0],
         [0,3,6,-5,15,90],
@@ -34,10 +34,18 @@ const checkWinner = ()=> {
             setTimeout(Reset, 2000);
         }
     })
+
+    if(boxtext[0].innerText !== "" && boxtext[1].innerText !== "" && boxtext[2].innerText !== "" && boxtext[3].innerText !== "" && boxtext[4].innerText !== "" &&
+    boxtext[5].innerText !== "" && boxtext[6].innerText !== "" && boxtext[7].innerText !== "" && boxtext[8].innerText !== "") {
+        document.querySelector('.info').innerText = "Draw!";
+        gameFinish = true;
+        gameOver.play();
+        //setTimeout(Reset, 2000);
+    }
 }
 
 //Game Logic
-music.play();
+//music.play();
 let boxes = document.getElementsByClassName('box');
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector('.boxText');
