@@ -118,3 +118,10 @@ nav ul {
         grid-template-rows: repeat(3, 10vw);
     }
 }
+
+/* To force inline elements to a new line */
+@media screen and (max-width: 306px){   
+    .gameInfo h1 span{
+        display: block;
+    }
+}
